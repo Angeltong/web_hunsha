@@ -1,0 +1,290 @@
+ /* 这是main */
+ .product_main{
+ 	width: 1000px;
+ 	height: 1200px;
+ 	background: gray;
+ 	margin: auto; 
+ }
+ .left{
+ 	width: 291px;
+ 	height: 1150px;
+ 	background: blue;
+ 	float: left;
+
+ }
+  .right{
+ 	width: 690px;
+ 	height: 1000px;
+ 	float: right;
+ 	margin-top: 45px;
+
+ }
+
+/* 这是左边 */
+ .left_top {
+    width: 291px;
+    height: 45px;
+    background: yellow;
+}
+.left_top p {
+    display: inline-block;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.left_top span {
+    font-size: 13px;
+    margin-top: 1px;
+    padding-top: 1px;
+}
+.left_logo{
+	 width: 291px;
+    height: 63px;
+   background: url('../images/t12.gif') no-repeat;
+}
+
+/* 这是作品  */
+.zuoping{
+     width: 290px;
+    height: 370px;
+     background: gray;
+     margin-top: 10px;
+}
+
+
+.zuoping ul li{
+   width: 290px;
+height: 18px;
+margin-top: 7px;
+text-align: center;
+}
+
+.huang{
+     width: 290px;
+    height: 30px;
+    background:url('../images/zuoping_gray.gif');
+    margin-top: 20px;
+}
+.huang p{
+    line-height: 30px;
+    
+}
+.huang:hover{
+      background:url('../images/libg16.gif');
+}
+#huang_show li:hover{
+    color: red;
+
+}
+#huang02,#huang03{
+     width: 290px;
+    height: 30px;
+    background:url('../images/zuoping_gray.gif');
+    margin-top: 190px;
+}
+#huang04{
+     width: 290px;
+    height: 30px;
+    background:url('../images/zuoping_gray.gif');
+    margin-top: 20px;
+}
+#huang05{
+     width: 290px;
+    height: 30px;
+    background:url('../images/zuoping_gray.gif');
+    margin-top: 20px;
+}
+
+#huang02,#huang03,#huang04,#huang05 p{
+    line-height: 30px;
+  
+}
+#huang02:hover,#huang03:hover,#huang04:hover,#huang05:hover{
+      background:url('../images/libg16.gif');
+}
+
+#huang03{
+     margin-top: 20px;
+
+}
+#huang_show {
+   width: 290px;
+    height: 145px;
+    background-color:yellow;
+    margin-top: 20px;
+}
+#huang_show ul li{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+   
+}
+
+/* 这是活动 */
+.huodong{
+      width: 290px;
+    height: 300px;
+     background:yellow;
+    
+}
+.huodong_logo{
+     width: 290px;
+    height: 40px;
+    background:url('../images/t4.gif') no-repeat;
+}
+.huodong_ul{
+      width: 290px;
+    height: 230px;
+    background:#FFF;
+   
+
+}
+.huodong_ul li{
+     width: 210px;
+    height: 45px;
+    margin-top: 10px;
+    border-bottom: 1px dashed gray;
+}
+.huodong_ul p{
+    font-size: 16px;
+     white-space: nowrap;    /*  超出部分隐藏 */
+    overflow: hidden;    /*    文字超出部分用省略号代替 */
+    text-overflow: ellipsis;
+}
+.huodong_ul span{
+    font-size: 12px;
+}
+.huodong_ul li:hover{
+    color: red;
+}
+/* 这是服务  */
+.service{
+      width: 290px;
+    height: 300px;
+     background:gray;
+    
+}
+.service_logo{
+     width: 290px;
+    height: 40px;
+    background:url('../images/t6.gif') no-repeat;
+}
+
+.service_ul{
+    width: 290px;
+    height: 280px;
+    background:yellow;
+
+}
+
+.service_ul li{
+    width: 290px;
+    height: 71px;
+    background:pink;
+    margin-top: 2px;
+
+}
+.service_p{
+     width: 132px;
+    height: 70px;
+    background: gray;
+     float: left;
+   
+
+}
+.service_p p{
+     font-size: 14px;
+    display: inline-block;
+    float: left;
+
+}
+.service_img{
+     width: 100px;
+    height: 71px;
+    margin-left: 5px;
+    background:pink;
+      float: left;
+}
+.service_img_01{
+     width: 12px;
+    height: 24px;
+    background: url('../images/libg8.gif') no-repeat; 
+    margin-top: 20px;
+    float: left;
+
+}
+.service_img_02{
+     width: 141px;
+    height: 71px; 
+      margin-left: 11px;
+    background: url('../images/libg14.gif') no-repeat; 
+    background-position: 0 -71px;
+}
+.service_img_02 p{
+    padding-top: 12px;
+}
+
+/*鼠标悬停事件*/
+.service_ul li:hover .service_p{
+     color: red;
+}
+.service_ul li:hover .service_img_01{
+ background: url('../images/libg8.gif') no-repeat; 
+    background-position: 0 -24px;
+}
+
+.service_ul li:hover .service_img_02{
+      background: url('../images/libg14.gif') no-repeat; 
+} 
+
+/* 这是右边 */
+.right_logo{
+	 width: 650px;
+    height: 70px;
+    background: url('../images/bg12.png') no-repeat;
+    
+}
+.right_cen{
+	 width: 690px;
+    height: 1070px;
+}
+
+.right_cen ul li{
+	width: 325px;
+    height: 340px;
+     background: url('../images/mei.gif') no-repeat;  
+      float: left;
+      margin: 10px 10px;
+     float: left;
+}
+
+.right_date{
+	width:325px;
+    height:60px;
+    margin-top:265px;
+     float: left;
+}
+.date_p{
+	width:325px;
+    height:40px;
+    background:gray;
+}
+
+.date_p:hover{
+   background:yellow;
+}
+
+.date_p p{
+	padding: 10px;
+}
+.see{
+	float: right;
+}
+
+.right_date:hover p{
+	color: red;
+
+}
+.right_date:hover span{
+      color: red;
+}

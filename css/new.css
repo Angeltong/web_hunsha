@@ -1,0 +1,209 @@
+/* 这是main */
+#main {
+    width: 1000px;
+    height: 1100px;
+    margin: auto;
+    margin-top: 10px;
+}
+.top {
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+}
+.top p {
+    display: inline-block;
+    font-size: 23px;
+    margin-left: 13px;
+}
+.top span {
+    font-size: 14px;
+}
+.logo {
+    width: 607px;
+    height: 67px;
+    background: url(../images/bg11.png) no-repeat;
+}
+.cen {
+    width: 1000px;
+    height: 840px;
+}
+.left {
+    width: 695px;
+    height: 830px;
+    float: left;
+    overflow: hidden;
+}
+.right {
+    width: 300px;
+    height: 800px;
+    float: right;
+    overflow: hidden;
+}
+.new ul {
+    width: 691px;
+    height: 90px;
+    background-color: yellow;
+}
+.new_ul li {
+    width: 680px;
+    height: 75px;
+    margin-top: 14px;
+    border-bottom: 1px dashed gray;
+}
+.new_li_left {
+    width: 64px;
+    height: 65px;
+    background: url(../images/libg11.gif)  no-repeat;
+    text-align: center;
+    color: #535353;
+    float: left;
+    margin-left: 7px;
+}
+.new_li_left p {
+    font-size: 39px;
+}
+.new_li_left span {
+    font-size: 14px;
+}
+
+/*鼠标悬停改变颜色*/
+.new_ul li:hover .new_li_left {
+    background-position: 0 -64px;
+    color: #FFF;
+}
+.new_ul li:hover .new_li_right {
+    color: red;
+}
+.new_li_right {
+    width: 600px;
+    height: 75px;
+    float: left;
+    margin-left: 5px;
+}
+
+/*显示省略号*/
+.p3 {
+    width: 610px;
+    height: 31px;     /* 转换为盒子模型 */
+    display: -webkit-box;     /* 显示方式为纵向 */
+    -webkit-box-orient: vertical;       /* 显示几行*/
+    -webkit-line-clamp: 2;    /*超出部分隐藏*/
+    overflow: hidden;   /*文字超出部分用省略号代替*/
+    text-overflow: ellipsis;
+}
+.p1 {
+    font-size: 16px;
+    font-weight: 900;
+}
+.p2 {
+    font-size: 12px;
+}
+.p3 {
+    font-size: 13px;
+}
+
+/*鼠标悬停上去，剩余部分字体显示出来*/
+.new_li_right:hover {
+    display: block;
+    height: 85px;
+}
+.new_li_right:hover .p3 {
+    display: block;
+    height: 45px;
+}
+
+/* 这是中间部分的右边 */
+.right_img {
+    width: 300px;
+    height: 520px;
+}
+.right_text {
+    width: 300px;
+    height: 300px;
+}
+.right_img_text {
+    width: 291px;
+    height: 33px;
+    background: url(../images/libg16.gif) no-repeat;
+}
+.right_img_text p {
+    line-height: 33px;
+    margin-left: 37px;
+    color: #fff;
+    font-weight: 10px;
+}
+.right_img ul li {
+    width: 130px;
+    height: 110px;
+    background: url(../images/img_ul.gif)  no-repeat;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+.right_img ul li p {
+    font-size: 17px;
+    margin-top: 115px;
+    white-space: nowrap;    /*  超出部分隐藏 */
+    overflow: hidden;    /*    文字超出部分用省略号代替 */
+    text-overflow: ellipsis;
+}
+.right_img ul li:hover p {
+    color: red;
+}
+.right_text_font {
+    width: 290px;
+    height: 33px;
+    background: url(../images/libg16.gif) no-repeat;
+}
+.right_text_font p {
+    line-height: 33px;
+    margin-left: 37px;
+    color: #fff;
+    font-weight: 10px;
+}
+.right_text ul li p {
+    white-space: nowrap;      /*  超出部分隐藏 */
+    overflow: hidden;      /*    文字超出部分用省略号代替 */
+    text-overflow: ellipsis;
+}
+.right_text a ul li {
+    width: 290px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;     /*图片代替列表*/
+    list-style-image: url(../images/li_gray.gif);
+      /*圆点在li内*/
+    list-style-position: inside;
+}
+
+/*鼠标移动上去改变背景颜色*/
+.right_text  a ul li:hover {
+    background-color: red;
+    list-style-image: url(../images/li_red.gif);
+    color:#fff;
+}
+
+/* 这是new_bottom */
+.new_bottom {
+    width: 1000px;
+    height: 100px;
+}
+.new_bottom ul li {
+    color: #A0A0A0;
+    float: left;
+    border: 1px solid gray;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding: 3px;
+}
+.new_bottom ul li:hover {
+    background-color: red;
+
+}
+.new_bottom p {
+    margin: 30px 20px;
+    float: right;
+    color: #fff;
+    background-color: #B5B5B5;
+}

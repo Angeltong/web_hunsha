@@ -1,0 +1,218 @@
+
+
+/*这是main*/
+#mian {
+  width: 1000px;
+  height: 506px;
+  margin: auto;
+}
+.mian_left {
+  width: 612px;
+  height: 506px;
+  float: left;
+}
+.mian_right {
+  width: 386px;
+  height: 506px;
+  float: left;
+  margin-left: 1px;
+  background: url(../images/right_img.gif) no-repeat;
+  float: left;
+}
+.left_logo {
+  width: 612px;
+  height: 60px;
+  background: url(../images/left_logo.gif)no-repeat;
+  float: left;
+}
+.left_cen {
+  width: 612px;
+  height: 275px;
+}
+.left_img {
+  width: 318px;
+  height: 200px;
+  background: url(../images/left_img.gif) no-repeat;
+  background-position: 12px;
+  margin: 10px 0;
+  float: left;
+}
+.left_text {
+  width: 294px;
+  height: 200px;
+  float: left;
+  margin: 10px 0;
+}
+.left_text li {
+  width: 240px;
+  height: 48px;
+  margin-left: 12px;
+  line-height: 20px;
+}
+.left_text ul li {
+  padding-left: 40px;
+  padding-top: 18px;
+}
+
+/*把a标签转换为快捷元素 字体换行的地方*/
+.left_text ul li a {
+  display: block;
+  width: 210px;
+}
+.text_1 {
+  background: url(../images/ico_bg1.gif) no-repeat;
+}
+.text_2 {
+  background: url(../images/ico_bg2.gif) no-repeat;
+}
+.text_3 {
+  background: url(../images/ico_bg3.gif) no-repeat;
+}
+
+/*鼠标移动上去图片变为红色*/
+.left_text li:hover {
+  background-position: 0 -65px;
+}
+
+/*鼠标移动上去字变为红色*/
+.left_text li:hover a {
+  color: red;
+}
+
+/*这是新闻和活动 */
+.left_xinwen {
+  width: 610px;
+  height: 230px;
+}
+.xin_left, .huo_right {
+  width: 280px;
+  height: 225px;
+  float: left;
+  margin-left: 25px;
+}
+
+/*这是新闻 */
+.xin_left p {
+  font-family: 黑体;
+  font-size: 20px;
+  font-weight: 900;/*字体加粗*/
+}
+.xin_left ul li {
+  margin-top: 12px;
+  border-bottom: 1px dashed gray;    /*只显示下面边框的虚线*/
+  line-height: 23px;
+  background: url(../images/san.gifg_03.gif) no-repeat;
+  padding-left: 20px;
+  background-position: left;/*三角形背景图片的位置*/
+}
+.xin_left  p a {
+  color: #800000;
+  font-size: 10px;
+}
+
+/*鼠标移上去变为红色*/
+.xin_left li:hover a {
+  color: red;
+}
+
+/*鼠标移上去变为手指*/
+.xin_left ul li:hover {
+  cursor: pointer;
+}
+
+/*这是活动 */
+.huo_right p {
+  font-family: 黑体;
+  font-size: 20px;
+  font-weight: 900;/*字体加粗*/
+}
+.huo_right ul li {
+  margin-top: 12px;
+  border-bottom: 1px dashed gray;    /*只显示下面边框的虚线*/
+  line-height: 23px;
+  background: url(../images/san.gifg_03.gif) no-repeat;
+  padding-left: 20px;
+  background-position: left;/*三角形背景图片的位置*/
+}
+.huo_right  p a {
+  color: #800000;
+  font-size: 10px;
+}
+
+/*鼠标移上去变为红色*/
+.huo_right li:hover a {
+  color: red;
+}
+
+/*鼠标移上去变为手指*/
+.huo_right ul li:hover {
+  cursor: pointer;
+}
+
+/*这是show */
+#show {
+  width: 1000px;
+  height: 420px;
+  margin: auto;
+}
+.show_logo {
+  width: 643px;
+  height: 90px;
+  background: url(../images/show_logo.gif)
+  no-repeat;
+}
+.show_img_01 {
+  background: url(../images/show_01.gif)
+  no-repeat;
+}
+.show_img_02 {
+  background: url(../images/show_02.gif)
+  no-repeat;
+}
+.show_img_03 {
+  background: url(../images/show_03.gif)
+  no-repeat;
+}
+.show_img_04 {
+  background: url(../images/show_04.gif)
+  no-repeat;
+}
+.show_img {
+  width: 1000px;
+  height: 330px;
+}
+.img_ul li {
+  width: 240px;
+  height: 320px;
+  margin-left: 8px;
+  float: left;
+  overflow: hidden;    /*从下右边动画未出现的时候 隐藏*/
+}
+.img_ul li a {
+
+  /*a标签转为快级元素，并设置宽高*/
+  display: block;
+  width: 100%; /*  height:0; */
+  height: 100%;   /*半透明颜色 黑色*/
+  background: rgba(0, 0, 0, .5);
+  transition: .5s; /*出现动画  从上往下出现*/
+  position: relative;/*给父级一个相对定位*/
+  overflow: hidden;/*超出部分的字体隐藏*/
+
+  /*从下右边动画出现*/
+  bottom: -300px;
+  right: -200px;
+}
+.meng {
+  color: #FFF;
+  position: absolute;/*给本级一个绝对定位*/
+  bottom: 20px;/*调整字的距离*/
+  left: 50px;
+}
+.img_ul li:hover a {
+
+  /*  height:100%; */
+  bottom: 0;
+  right: 0;
+}
+

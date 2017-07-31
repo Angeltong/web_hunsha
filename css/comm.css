@@ -1,0 +1,299 @@
+/*去掉块级元素默认的内外边距*/
+html, body, div, p, ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*去掉啊a标签的下划线 默认黑色字体*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*去掉列表的小黑点*/
+li {
+  list-style: none;
+}
+
+/*默认字体大小16px*/
+html, body {
+  font-size: 16px;
+}
+
+/* 头部 */
+#top {
+  width: 100%;
+  min-width: 1000px;
+  height: 182px;
+  background: url(../images/bg.gif);
+  margin-top: 1px;
+  background-position: 0 3px;     /*定位背景图片，对齐横线*/
+}
+.top_cen {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  background: url(../images/top_telepon.gif) no-repeat;
+}
+.top_ul {
+  width: auto;
+  height: auto;
+  margin-left: 46px;
+}
+.top_ul li {
+  float: left;
+  width: 90px;
+  margin-left: 10px;
+  margin-top: 8px;
+  text-align: right; /*向右对齐*/
+}
+.top_ul li p {
+  color: #B4B4B4; /*默认灰色*/
+  text-transform: uppercase; /*小写变为大写*/
+  font-size: 12px;
+}
+
+/*鼠标移上去变为红色*/
+.top_ul li:hover a {
+  color: red;
+}
+
+/*鼠标移上去英文字变为黑色*/
+.top_ul li:hover  p {
+  color: #000;
+}
+
+/*这是banner */
+#banner {
+  width: 100%;
+  min-width: 1000px;
+  height: 465px;
+  background: url(../images/redmain.gif);
+  background-position: center;/*中间向两边散开*/
+  position: relative;  /*基于ul层定位，父类加relative*/
+}
+
+/*鼠标移上去，可以点击，鼠标变为手*/
+#banner>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_ul {
+  width: 1000px;
+  height: 34px;
+  position: absolute;  /*基于ul层定位，子类加absolute*/
+  bottom: 0;/*调到最下面*/
+  left: 50%;
+  margin-left: -500px;
+}
+.banner_ul li {
+  color: #fff;
+  float: left;
+  line-height: 34px;
+  margin-left: 12px;
+  background-color: #000;
+  width: 190px;
+  padding-left: 20px;
+}
+#banner_left {
+  width: 30px;
+  height: 34px;
+  background: url(../images/arr.png) no-repeat;
+  margin-left: 0;
+}
+#banner_right {
+  width: 30px;
+  height: 32px;
+  background: url(../images/arr.png) no-repeat;
+  background-position: -57px 0;
+}
+#banner_left:hover {
+  background-position: 0 -34px;
+}
+#banner_right:hover {
+  background-position: -57px -34px;
+}
+
+/*鼠标悬停上去，变为红色*/
+.banner_ul li:hover {
+  background-color: red;
+}
+
+/*这是fouth_img*/
+#fouth_img {
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+  margin-top: 2px;
+}
+#fouth_img>div {
+  float: left;
+  height: 98px;/*统一设置高*/
+  margin-left: 2px;
+}
+.img_01 {
+  width: 258px;
+  margin-left: 0 !important;
+  background: url(../images/red_01.gif) no-repeat;
+}
+.img_02 {
+  width: 183px;
+  background: url(../images/red_02.gif)
+  no-repeat;
+}
+.img_03 {
+  width: 184px;
+  background: url(../images/red_03.gif)
+  no-repeat;
+  position: relative;
+}
+.img_04 {
+  width: 368px;
+  background: url(../images/red_04.gif)
+  no-repeat;
+}
+.img_03>div {
+  width: 41px;
+  height: 41px;
+  border-radius: 100%;  /*方形转换为圆形*/
+  background-color: #000;
+  position: absolute;
+  top: 45px;
+}
+.img_03_01 {
+  left: 27px;
+  background: url(../images/weibo_01.gif)
+  no-repeat;
+}
+.img_03_02 {
+  left: 69px;
+  background: url(../images/qq_02.gif)
+  no-repeat;
+}
+.img_03_03 {
+  left: 112px;
+  background: url(../images/xinlang_03.gif)no-repeat;
+}
+
+/*鼠标移上去 图片放大*/
+.img_03>div:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 10px;  /*显示层*/
+}
+
+/*鼠标移上去，可以点击，鼠标变为手*/
+#fouth_img div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*  这是bottom */
+#bottom {
+  width: 100%;
+  min-width: 1000px;
+  height: 550px;
+  margin: auto;
+}
+.bottom_01 {
+  height: 240px;
+  width: 100%;
+  min-width: 1000px;
+  position: relative;
+  background-color:#2E2E2E;
+}
+.bottom_01_cen {
+  height: 240px;
+  width: 1000px;
+  margin:auto;
+}
+.bottom_01_img {
+  position: relative;
+  width: 300px;
+  height: 240px;
+  background: url(../images/bottom.gif) no-repeat;
+  float: left;
+  font-size: 12px;
+  color: #979797;
+  overflow: hidden;
+}
+.bottom_01_img p {
+  position: absolute;
+  bottom: 80px;
+  right: 26px;
+}
+.bottom_01_img span {
+  position: absolute;
+  bottom: 41px;
+  right: 53px;
+}
+.bottom_01_showcase {
+  width: 650px;
+  height: 100%;
+  margin-top: 10px;
+  float: right;
+
+}
+.showcase01 {
+  width: 160px;
+  height: 100px;
+  margin-top: 10px;
+  color: #FFF;
+  float: left;
+}
+.showcase01 p {
+  width: 135px;
+  height: 25px;
+  background-color: #000;
+  line-height: 25px;
+  padding-left: 14px;
+  font-size: 20px;
+
+}
+.showcase01 li a {
+  width: 160px;
+  color: #9A9A9A;
+}
+.showcase01 ul li {
+ list-style: disc inside;
+color: #9A9A9A;
+padding-left: 17px;
+width: 132px;
+height: 20px;
+}
+.showcase01 ul li a{
+  font-size:12px;
+}
+/*同时改变showcase 和字体*/
+.showcase01 ul li:hover, .showcase01:hover p {
+  background-color: #676767;
+}
+.bottom_02 {
+  height: 110px;
+  background: url(../images/YiShuZi_06.gif);
+}
+.bottom_03 {
+  height: 100px;
+  width: 100%;
+  background: #1F1F1F;
+  color: white;
+}
+.bottom_03 p {
+  font-size: 10px;
+  padding-top: 20px;
+  margin-left: 100px;
+  line-height: 20px;
+}
+.bottom_04 {
+  height: 100px;
+  background-color: #000;
+}
+.bottom_04 p {
+  padding-left: 65px;
+  padding-top: 20px;
+  color: #fff;
+  font-family: 黑体;
+  font-size: 20px;
+}

@@ -1,0 +1,248 @@
+/*  这是main  */
+.news_main {
+    width: 1000px;
+    height: 1080px;
+
+    margin: auto;
+}
+.main_left {
+    width: 680px;
+    height: 1070px;
+    float: left;
+}
+.main_right {
+    width: 300px;
+    height: 1020px;
+    float: right;
+    margin-top: 44px
+}
+.left_top {
+    width: 680px;
+    height: 45px;
+}
+.left_top p {
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.left_top span {
+    font-size: 13px;
+    margin-top: 1px;
+    padding-top: 1px;
+}
+.main_cen {
+    width: 680px;
+    height: 1020px;
+
+}
+.cen_logo {
+    width: 607px;
+    height: 67px;
+    background: url(../images/bg11.png);
+}
+.cen_red {
+    width: 680px;
+    height: 50px;
+    background-color: red;
+}
+.cen_red p {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.cen_font {
+    width: 680px;
+    height: 60px;
+
+}
+.cen_font p {
+    padding-top: 10px;
+    line-height: 25px;
+}
+.news_show {
+    margin-top: 18px;
+    width: 661px;
+    height: 411px;
+    background: url(../images/news_show.gif) no-repeat;
+}
+.news_text {
+    width: 661px;
+    height: 405px;
+}
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10 {
+    padding-top: 10px;
+}
+.p8 {
+    display: inline-block;
+}
+.p_ul {
+    padding-top: 10px;
+}
+.p_ul li {
+    float: left;
+    margin-left: 10px;
+}
+.p9, .p10 {
+    display: inline-block;
+}
+.a_xiang {
+    display: block;
+    margin-top: 10px;
+}
+.right_top {
+    width: 300px;
+    height: 200px;
+
+}
+.right_cen {
+    width: 300px;
+    height: 440px;
+    margin-top: 20px;
+
+}
+.right_bottom {
+    width: 300px;
+    height: 365px;
+
+}
+
+ /* 这是right_top  */
+.top_title{
+     width: 290px;
+    height: 33px;
+      background: url(../images/libg16.gif) no-repeat;
+}
+.top_title p{
+   color: #FFF;
+font-size: 16px;
+padding: 7px 43px;
+}
+.right_top_xin {
+    width: 300px;
+    height: 33px;
+
+}
+.right_top_xin ul li p {
+   /*文字超出部分用省略号代替的步奏*/
+    /*去掉空格*/
+    white-space: nowrap;
+    /*超出部分隐藏*/
+    overflow: hidden;
+    /*文字超出部分用省略号代替*/
+    text-overflow: ellipsis;
+}
+.right_top_xin ul li {
+    margin: 10px 7px;
+      /*列表前面的黑点用图片代替*/
+    list-style-image: url(../images/li_gray.gif); 
+    /*列表在li 里面*/
+  /*list-style-position: inside;*/
+/* 
+   文字超出部分用省略号代替的步奏
+   去掉空格
+   white-space: nowrap;
+   超出部分隐藏
+   overflow: hidden;
+   文字超出部分用省略号代替
+   text-overflow: ellipsis;  */
+}
+
+/*鼠标移动上去背景变成红色 列图片改变*/
+.right_top_xin ul li:hover {
+     background-color: red;
+  list-style-image: url(../images/li_red.gif);
+   background-position:1px
+
+}
+/*转换为快捷元素 */
+.right_top_xin a{
+    display: block;
+}
+
+ /* 这是right_cen  */
+
+ .cen_title{
+     width: 290px;
+    height: 33px;
+      background: url(../images/libg16.gif) no-repeat;
+      margin-top:10px;
+}
+.cen_title p{
+   color: #FFF;
+font-size: 16px;
+padding: 7px 43px;
+
+}
+.right_cen_img{
+     width: 290px;
+height: 400px;
+
+
+}
+.right_cen_img ul li{
+     width: 126px;
+     height: 115px;
+      float: left;
+     background:url(../images/img_ul.gif) no-repeat;
+     margin:8px 8px;
+
+}
+.right_cen_img ul li a p{
+    font-size:17px;
+   padding-top: 110px;
+   white-space: nowrap;    /*  超出部分隐藏 */
+    overflow: hidden;    /*    文字超出部分用省略号代替 */
+    text-overflow: ellipsis;
+}
+.right_cen_img ul li:hover p{
+color: red;
+}
+/* 这是right_bottom  */
+.bottom_title{
+     width: 290px;
+    height: 33px;
+     background: url(../images/libg16.gif) no-repeat;
+}
+.bottom_title p{
+
+   color: #FFF;
+font-size: 16px;
+padding: 7px 43px;
+}
+.right_bottom_xin {
+    width: 300px;
+    height: 33px;
+
+}
+.right_bottom_xin ul li p {
+    line-height: 20px;
+}
+.right_bottom_xin ul li {
+    margin: 10px 7px;
+      /*列表前面的黑点用图片代替*/
+    list-style-image: url(../images/li_gray.gif); /*列表在li 里面*/
+    list-style-position: inside;
+    /*文字超出部分用省略号代替的步奏*/
+    /*去掉空格*/
+    white-space: nowrap;
+    /*超出部分隐藏*/
+    overflow: hidden;
+    /*文字超出部分用省略号代替*/
+    text-overflow: ellipsis;
+}
+
+/*鼠标移动上去背景变成红色 列图片改变*/
+.right_bottom_xin ul li:hover {
+     background-color: red;
+  list-style-image: url(../images/li_red.gif);
+   background-position:1px
+
+}
+/*转换为快捷元素 */
+.right_bottom_xin a{
+    display: block;
+}
